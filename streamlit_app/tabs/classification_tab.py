@@ -10,7 +10,7 @@ from joblib import load
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 # Importation de la base
-df=pd.read_csv('C:\\Users\younes.essoualhi\\Documents\\satisfaction-client\\data\\dataset.csv', sep='\t')
+df=pd.read_csv('C:\\Users\\youne\\Desktop\\Application-streamlit\\dataset and models\\dataset.csv', sep='\t')
 # Initialiser un objet vectorizer
 vectorizer = CountVectorizer(max_features = 1000)
 #importer la liste des mots inutiles:
@@ -109,7 +109,7 @@ def run():
     
     #from joblib import load
     
-    model_lr = load('C:\\Users\younes.essoualhi\\Documents\\satisfaction-client\\data\\Logistic_linear.joblib')
+    model_lr = load('C:\\Users\\youne\\Desktop\\Application-streamlit\\dataset and models\\Logistic_linear.joblib')
     
     y_pred_lr = model_lr.predict(X)
     
@@ -129,7 +129,7 @@ def run():
     # from joblib import load
 
     model_gbc = load(
-        'C:\\Users\younes.essoualhi\\Documents\\satisfaction-client\\data\\GradinentBoosting_Classifier.joblib')
+        'C:\\Users\\youne\\Desktop\\Application-streamlit\\dataset and models\\GradinentBoosting_Classifier.joblib')
 
     y_pred_gbc = model_gbc.predict(X)
 

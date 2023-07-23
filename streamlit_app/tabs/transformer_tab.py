@@ -29,11 +29,11 @@ def run():
         ('Sélectionnez la requête souhaitée','Recherche de commentaires similaires', 'Recherche de réponses types associées à un commentaire',))
     if option == 'Sélectionnez la requête souhaitée':
         st.write('')
-        image = Image.open('C:/Users/younes.essoualhi/Documents/satisfaction-client/images/eCall.jpg')
+        image = Image.open('C:/Users/youne/Desktop/Application-streamlit/images/eCall.jpg')
         st.image(image, caption='You have a new comment')
     elif option == 'Recherche de commentaires similaires':
         st.write('Votre requête:', option)
-        df = pd.read_pickle("C:/Users/younes.essoualhi/Documents/satisfaction-client/data/df_transformer.pkl")
+        df = pd.read_pickle("C:\\Users\\youne\\Desktop\\Application-streamlit\\dataset and models\\df_transformer.pkl")
 
         def user_input():
             Commentaire = st.text_input('Insérez votre texte')
@@ -60,7 +60,7 @@ def run():
             st.table(results)
     elif option == 'Recherche de réponses types associées à un commentaire':
         st.write('Votre requête:', option)
-        df = pd.read_pickle("C:/Users/younes.essoualhi/Documents/satisfaction-client/data/df_reponse.pkl")
+        df = pd.read_pickle("C:\\Users\\youne\\Desktop\\Application-streamlit\\dataset and models\\df_reponse.pkl")
 
         def user_input():
             Commentaire = st.text_input('Insérez votre texte')

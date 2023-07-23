@@ -26,10 +26,10 @@ def run():
         - [l'extraction de propos] (https://github.com/Yns-data/Notebook-satisfaction-client/blob/main/6.%20Analyse%20des%20commentaires.ipynb) pour extraire des commentaires similaires ou identifier des réponses à une problématique rencontrée.
         """
     )
-    image = Image.open('C:/Users/younes.essoualhi/Documents/satisfaction-client/images/mots.png')
+    image = Image.open('C:\\Users\\youne\\Desktop\\Application-streamlit\\images\\mots.png')
     st.image(image, caption='Customers words')
     st.header("Presentation du dataframe")
-    df=pd.read_csv("C:/Users/younes.essoualhi/Documents/satisfaction-client/data/dataset.csv",sep="\t")
+    df=pd.read_csv("C:\\Users\\youne\\Desktop\\Application-streamlit\\dataset and models\\dataset.csv",sep="\t")
     st.markdown("Le fichier contient 19863 enregistrement et 11 variables")
     st.write(df)
 
